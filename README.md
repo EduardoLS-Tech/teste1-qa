@@ -54,7 +54,6 @@ cypress/
 - **End-to-End (E2E):** Fluxos completos do usuário (login → transferência → extrato)
 - **UI / Funcionais:** Validação de elementos, botões e mensagens
 - **Negativos / Edge Cases:** Cenários inválidos, como login incorreto, saldo insuficiente ou usuário inexistente
-- **Preparação via API:** Criação ou reset de dados para testes independentes e reproduzíveis
 
 ---
 
