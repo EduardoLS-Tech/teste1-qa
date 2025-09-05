@@ -1,4 +1,6 @@
 # Testes Cypress do BugBank
+Funcionalidade de transferência fora do ar, impossibilitando a cobertura deste fluxo e limitando os cenários de extratos.
+
 
 Testes automatizados do **BugBank** usando **Cypress** com **Page Object Model (POM)**, garantindo manutenção, escalabilidade e clareza.
 
