@@ -3,7 +3,10 @@ Funcionalidade de transferência fora do ar, impossibilitando a cobertura deste 
 
 
 Testes automatizados do **BugBank** usando **Cypress** com **Page Object Model (POM)**, garantindo manutenção, escalabilidade e clareza.
-
+Desenvolvido 12 testes:
+6 testes: Validação tela de casdastro
+4 testes: Tela de Login
+2 testes: Dashboard e valores
 ---
 
 ## Estrutura de Pastas
