@@ -1,6 +1,7 @@
 {
   "devDependencies": {
-    "cypress": "^15.1.0"
+    "cypress": "^15.1.0",
+    "prettier": "^3.6.2"
   },
   "name": "projetocypress",
   "version": "1.0.0",

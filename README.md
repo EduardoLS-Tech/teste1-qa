@@ -11,7 +11,7 @@ cypress/
 ├── e2e/                  → Testes organizados por domínio de negócio
 │   ├── authentication/   → Testes de login e cadastro
 │   │   ├── login.cy.js
-│   ├── transactions/     → Testes de depósitos e transferências
+│   ├── transactions/     → Testes de depósitos e transferências // Indiposnivel para realização testes
 │   │   ├── deposit.cy.js
 │   │   └── transfer.cy.js
 │   └── statement/        → Testes de extrato e histórico de transações
@@ -44,10 +44,10 @@ cypress/
 
 ## Tipos de Testes
 
-- **End-to-End (E2E):** Fluxos completos do usuário (login → transferência → extrato)  
-- **UI / Funcionais:** Validação de elementos, botões e mensagens  
-- **Negativos / Edge Cases:** Cenários inválidos, como login incorreto, saldo insuficiente ou usuário inexistente  
-- **Preparação via API:** Criação ou reset de dados para testes independentes e reproduzíveis  
+- **End-to-End (E2E):** Fluxos completos do usuário (login → transferência → extrato)
+- **UI / Funcionais:** Validação de elementos, botões e mensagens
+- **Negativos / Edge Cases:** Cenários inválidos, como login incorreto, saldo insuficiente ou usuário inexistente
+- **Preparação via API:** Criação ou reset de dados para testes independentes e reproduzíveis
 
 ---
 
