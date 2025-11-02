@@ -1,6 +1,6 @@
 # 🧪 Testes Automatizados - BugBank (Cypress)
 
-Este projeto contém uma suíte de testes automatizados desenvolvida em **Cypress**, estruturada com o padrão **Page Object Model (POM)** para garantir **clareza, escalabilidade e fácil manutenção** do código.
+Este projeto contém uma suíte de **testes automatizados** desenvolvida em **Cypress**, utilizando o padrão **Page Object Model (POM)** para garantir **clareza, escalabilidade e fácil manutenção** do código.
 
 > ⚠️ A funcionalidade de **transferência** está temporariamente fora do ar, o que limita a cobertura total dos cenários de **extratos e movimentações**.
 
@@ -8,7 +8,7 @@ Este projeto contém uma suíte de testes automatizados desenvolvida em **Cypres
 
 ## 📋 Cobertura de Testes
 
-Foram desenvolvidos **12 testes automatizados**, distribuídos entre as principais telas do BugBank:
+Foram implementados **12 testes automatizados**, distribuídos entre as principais funcionalidades do BugBank:
 
 - **Tela de Cadastro:** 6 testes  
 - **Tela de Login:** 4 testes  
@@ -57,37 +57,31 @@ cypress/
 │   └── test.config.js
 │
 └── cypress.config.js       # Configuração principal do Cypress
+
 ⚙️ Tipos de Testes Implementados
 End-to-End (E2E): valida fluxos completos do usuário — login → depósito → extrato.
 
-UI / Funcionais: garante a integridade visual e funcional de elementos, botões e mensagens.
+UI / Funcionais: assegura a integridade visual e funcional de elementos, botões e mensagens.
 
 Negativos / Edge Cases: cobre cenários inválidos, como login incorreto, saldo insuficiente e usuários inexistentes.
 
 🎯 Objetivo do Projeto
-Validar o funcionamento dos fluxos críticos da aplicação BugBank, assegurando:
+Garantir que os fluxos críticos do BugBank funcionem corretamente, mantendo a suíte de testes:
 
-Confiabilidade nas principais funcionalidades.
+Confiável: valida as principais funcionalidades do sistema.
 
-Organização e modularidade da suíte de testes.
+Organizada: estruturada por domínio de negócio e POM.
 
-Facilidade de manutenção e evolução contínua do projeto.
+Escalável: de fácil expansão e manutenção contínua.
 
 ▶️ Como Executar os Testes
 Instale as dependências:
-
-bash
-Copiar código
 npm install
+
 Execute os testes no modo interativo:
-
-bash
-Copiar código
 npx cypress open
-Ou em modo headless:
 
-bash
-Copiar código
+Ou em modo headless (terminal):
 npx cypress run
 
 
@@ -101,7 +95,9 @@ Faker.js — Geração dinâmica de dados
 Node.js — Ambiente de execução
 
 🚧 Limitações Conhecidas
-Módulo de transferência indisponível, impedindo testes E2E completos com esse fluxo.
+O módulo de transferência encontra-se indisponível, impedindo a execução completa de alguns fluxos E2E.
 
-Cenários de extrato parcialmente cobertos devido à dependência do módulo acima.
-Garantir que os **fluxos críticos do BugBank** funcionem corretamente, mantendo a suíte de testes **organizada, escalável e fácil de manter**.
+Os testes de extrato estão parcialmente limitados devido à dependência dessa funcionalidade.
+
+✅ Conclusão
+Este projeto visa garantir a qualidade e estabilidade do BugBank por meio de uma suíte de testes automatizada, modular e de fácil manutenção, servindo como base sólida para futuras implementações e integração contínua (CI/CD).
