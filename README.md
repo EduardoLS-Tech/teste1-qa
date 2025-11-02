@@ -1,33 +1,41 @@
-# Testes Cypress do BugBank
+# 🧪 Testes Automatizados - BugBank (Cypress)
 
-Testes automatizados do **BugBank** usando **Cypress** com **Page Object Model (POM)**, garantindo manutenção, escalabilidade e clareza.
-```
-Funcionalidade de transferência fora do ar, impossibilitando a cobertura deste fluxo e limitando os cenários de extratos.
+Este projeto contém uma suíte de testes automatizados desenvolvida em **Cypress**, estruturada com o padrão **Page Object Model (POM)** para garantir **clareza, escalabilidade e fácil manutenção** do código.
 
-Desenvolvido 12 testes
-Tela de Casdastro: 6 testes
-Tela de Login: 4 testes
-Tela da Dashboard: 2 testes
+> ⚠️ A funcionalidade de **transferência** está temporariamente fora do ar, o que limita a cobertura total dos cenários de **extratos e movimentações**.
 
-```
+---
 
-## Estrutura de Pastas
+## 📋 Cobertura de Testes
 
-```
+Foram desenvolvidos **12 testes automatizados**, distribuídos entre as principais telas do BugBank:
+
+- **Tela de Cadastro:** 6 testes  
+- **Tela de Login:** 4 testes  
+- **Tela da Dashboard:** 2 testes  
+
+---
+
+## 🧱 Estrutura de Pastas
+
+```bash
 cypress/
-├── e2e/                  → Testes organizados por domínio de negócio
-│   ├── authentication/   → Testes de login e cadastro
+├── e2e/                    # Testes organizados por domínio de negócio
+│   ├── authentication/     # Testes de login e cadastro
 │   │   ├── login.cy.js
-│   ├── transactions/     → Testes de depósitos e transferências // Indiposnivel para realização testes
+│   │   └── signup.cy.js
+│   ├── transactions/       # Testes de depósitos e transferências (indisponível no momento)
 │   │   ├── deposit.cy.js
 │   │   └── transfer.cy.js
-│   └── statement/        → Testes de extrato e histórico de transações
+│   └── statement/          # Testes de extrato e histórico de transações
 │       └── statement.cy.js
-├── fixtures/             → Massa de dados estática (usuários, transações)
+│
+├── fixtures/               # Massa de dados estática (usuários, transações)
 │   ├── users.json
 │   └── transactions.json
+│
 ├── support/
-│   ├── pageObjects/      → Classes de páginas encapsulando elementos e ações
+│   ├── pageObjects/        # Classes encapsulando elementos e ações de cada página
 │   │   ├── Authentication/
 │   │   │   ├── LoginPage.js
 │   │   │   └── SignupPage.js
@@ -37,26 +45,63 @@ cypress/
 │   │   └── Transactions/
 │   │       ├── DepositPage.js
 │   │       └── TransferPage.js
-│   ├── utils/            → Funções auxiliares e chamadas de API
+│   │
+│   ├── utils/              # Funções auxiliares e chamadas de API
 │   │   ├── fakerUtils.js
 │   │   └── apiUtils.js
-│   └── commands.js       → Comandos Cypress customizados e reutilizáveis
-├── config/               → Variáveis de ambiente e configurações de teste
+│   │
+│   └── commands.js         # Comandos customizados e reutilizáveis do Cypress
+│
+├── config/                 # Configurações e variáveis de ambiente
 │   ├── env.config.js
 │   └── test.config.js
-└── cypress.config.js     → Configuração principal do Cypress
-```
+│
+└── cypress.config.js       # Configuração principal do Cypress
+⚙️ Tipos de Testes Implementados
+End-to-End (E2E): valida fluxos completos do usuário — login → depósito → extrato.
 
----
+UI / Funcionais: garante a integridade visual e funcional de elementos, botões e mensagens.
 
-## Tipos de Testes
+Negativos / Edge Cases: cobre cenários inválidos, como login incorreto, saldo insuficiente e usuários inexistentes.
 
-- **End-to-End (E2E):** Fluxos completos do usuário (login → transferência → extrato)
-- **UI / Funcionais:** Validação de elementos, botões e mensagens
-- **Negativos / Edge Cases:** Cenários inválidos, como login incorreto, saldo insuficiente ou usuário inexistente
+🎯 Objetivo do Projeto
+Validar o funcionamento dos fluxos críticos da aplicação BugBank, assegurando:
 
----
+Confiabilidade nas principais funcionalidades.
 
-## Objetivo
+Organização e modularidade da suíte de testes.
 
+Facilidade de manutenção e evolução contínua do projeto.
+
+▶️ Como Executar os Testes
+Instale as dependências:
+
+bash
+Copiar código
+npm install
+Execute os testes no modo interativo:
+
+bash
+Copiar código
+npx cypress open
+Ou em modo headless:
+
+bash
+Copiar código
+npx cypress run
+
+
+🧩 Tecnologias Utilizadas
+Cypress — Framework de testes E2E
+
+JavaScript (ES6+)
+
+Faker.js — Geração dinâmica de dados
+
+Node.js — Ambiente de execução
+
+🚧 Limitações Conhecidas
+Módulo de transferência indisponível, impedindo testes E2E completos com esse fluxo.
+
+Cenários de extrato parcialmente cobertos devido à dependência do módulo acima.
 Garantir que os **fluxos críticos do BugBank** funcionem corretamente, mantendo a suíte de testes **organizada, escalável e fácil de manter**.
