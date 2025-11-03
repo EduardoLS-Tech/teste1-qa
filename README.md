@@ -58,12 +58,14 @@ cypress/
 │
 └── cypress.config.js       # Configuração principal do Cypress
 
+---
 ⚙️ Tipos de Testes Implementados
 End-to-End (E2E): valida fluxos completos do usuário — login → depósito → extrato.
 
 UI / Funcionais: assegura a integridade visual e funcional de elementos, botões e mensagens.
 
 Negativos / Edge Cases: cobre cenários inválidos, como login incorreto, saldo insuficiente e usuários inexistentes.
+---
 
 🎯 Objetivo do Projeto
 Garantir que os fluxos críticos do BugBank funcionem corretamente, mantendo a suíte de testes:
@@ -73,6 +75,8 @@ Confiável: valida as principais funcionalidades do sistema.
 Organizada: estruturada por domínio de negócio e POM.
 
 Escalável: de fácil expansão e manutenção contínua.
+
+---
 
 ▶️ Como Executar os Testes
 Instale as dependências:
@@ -84,6 +88,7 @@ npx cypress open
 Ou em modo headless (terminal):
 npx cypress run
 
+---
 
 🧩 Tecnologias Utilizadas
 Cypress — Framework de testes E2E
@@ -94,10 +99,14 @@ Faker.js — Geração dinâmica de dados
 
 Node.js — Ambiente de execução
 
+---
+
 🚧 Limitações Conhecidas
 O módulo de transferência encontra-se indisponível, impedindo a execução completa de alguns fluxos E2E.
 
 Os testes de extrato estão parcialmente limitados devido à dependência dessa funcionalidade.
+
+---
 
 ✅ Conclusão
 Este projeto visa garantir a qualidade e estabilidade do BugBank por meio de uma suíte de testes automatizada, modular e de fácil manutenção, servindo como base sólida para futuras implementações e integração contínua (CI/CD).
