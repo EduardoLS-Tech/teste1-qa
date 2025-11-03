@@ -68,16 +68,14 @@ Negativos / Edge Cases: cobre cenários inválidos, como login incorreto, saldo 
 
 ---
 
-🎯 Objetivo do Projeto
+## 🎯 Objetivo do Projeto
 
-Garantir que os fluxos críticos do BugBank funcionem corretamente, mantendo a suíte de testes:
+Assegurar o funcionamento correto e consistente dos **fluxos críticos do BugBank**, por meio de uma suíte de testes automatizados que seja:
 
-Confiável: valida as principais funcionalidades do sistema.
-
-Organizada: estruturada por domínio de negócio e POM.
-
-Escalável: de fácil expansão e manutenção contínua.
-
+- **Confiável:** garante a validação completa das principais funcionalidades do sistema, reduzindo falhas em produção.  
+- **Organizada:** segue uma arquitetura modular baseada em **domínios de negócio** e no padrão **Page Object Model (POM)**, facilitando a leitura e manutenção.  
+- **Escalável:** permite a rápida inclusão de novos cenários e funcionalidades, acompanhando a evolução contínua da aplicação.
+  
 ---
 
 ▶️ Como Executar os Testes
