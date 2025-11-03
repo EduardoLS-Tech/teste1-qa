@@ -2,7 +2,7 @@
 
 Este projeto contém uma suíte de testes automatizados desenvolvida em **Cypress**, estruturada com o padrão **Page Object Model (POM)** para garantir clareza, escalabilidade e fácil manutenção do código.
 
-> A funcionalidade de **transferência** está temporariamente fora do ar, o que limita a cobertura total dos cenários de extratos e movimentações.
+> ⚠️ A funcionalidade de **transferência** está temporariamente fora do ar, o que limita a cobertura total dos cenários de extratos e movimentações.
 
 ---
 
@@ -114,12 +114,13 @@ Tecnologias Utilizadas
 
 ---
 
-Limitações Conhecidas
-O módulo de transferência encontra-se indisponível, impedindo a execução completa de alguns fluxos E2E.
+Limitações Conhecidas:
 
-Os testes de extrato estão parcialmente limitados devido à dependência dessa funcionalidade.
+- O módulo de transferência encontra-se indisponível, impedindo a execução completa de alguns fluxos E2E.
+
+- Os testes de extrato estão parcialmente limitados devido à dependência dessa funcionalidade.
 
 ---
 
 Conclusão
-Este projeto visa garantir a qualidade e estabilidade do BugBank por meio de uma suíte de testes automatizada, modular e de fácil manutenção, servindo como base sólida para futuras implementações e integração contínua (CI/CD).
+- Este projeto visa garantir a qualidade e estabilidade do BugBank por meio de uma suíte de testes automatizada, modular e de fácil manutenção, servindo como base sólida para futuras implementações e integração contínua (CI/CD).
