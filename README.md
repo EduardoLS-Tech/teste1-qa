@@ -1,4 +1,4 @@
-# 🧪 Testes Automatizados - BugBank (Cypress)
+# Testes Automatizados - BugBank (Cypress)
 
 Este projeto contém uma suíte de **testes automatizados** desenvolvida em **Cypress**, utilizando o padrão **Page Object Model (POM)** para garantir **clareza, escalabilidade e fácil manutenção** do código.
 
