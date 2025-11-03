@@ -69,6 +69,7 @@ Negativos / Edge Cases: cobre cenários inválidos, como login incorreto, saldo 
 ---
 
 🎯 Objetivo do Projeto
+
 Garantir que os fluxos críticos do BugBank funcionem corretamente, mantendo a suíte de testes:
 
 Confiável: valida as principais funcionalidades do sistema.
